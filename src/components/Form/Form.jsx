@@ -11,7 +11,6 @@ const Form = ({
   horarios,
   setHorarios,
 }) => {
-
   const guardar = () => {
     setHorarios([...horarios, formState]);
     setFormState(INITIAL_FORM);
@@ -34,14 +33,30 @@ const Form = ({
               setFormState({ ...formState, color: e.target.value })
             }
           >
-            <option value="#32CD32" style={{backgroundColor: "#32CD32"}}>Verde Lima</option>
-            <option value="#009dff" style={{backgroundColor: "#009dff"}}>Azul cielo</option>
-            <option value="#ffc0cb" style={{backgroundColor: "#ffc0cb"}}>Rosa</option>
-            <option value="#ff4c4c" style={{backgroundColor: "#ff4c4c"}}>Rojo suave</option>
-            <option value="#FABADA" style={{backgroundColor: "#FABADA"}}>#FABADA</option>
-            <option value="#ffb836" style={{backgroundColor: "#ffb836"}}>Naranja</option>
-            <option value="#ffff65" style={{backgroundColor: "#ffff65"}}>Amarillo claro</option>
-            <option value="#4eedff" style={{backgroundColor: "#4eedff"}}>Azul claro</option>
+            <option value="#32CD32" style={{ backgroundColor: "#32CD32" }}>
+              Verde Lima
+            </option>
+            <option value="#009dff" style={{ backgroundColor: "#009dff" }}>
+              Azul cielo
+            </option>
+            <option value="#ffc0cb" style={{ backgroundColor: "#ffc0cb" }}>
+              Rosa
+            </option>
+            <option value="#ff4c4c" style={{ backgroundColor: "#ff4c4c" }}>
+              Rojo suave
+            </option>
+            <option value="#FABADA" style={{ backgroundColor: "#FABADA" }}>
+              #FABADA
+            </option>
+            <option value="#ffb836" style={{ backgroundColor: "#ffb836" }}>
+              Naranja
+            </option>
+            <option value="#ffff65" style={{ backgroundColor: "#ffff65" }}>
+              Amarillo claro
+            </option>
+            <option value="#4eedff" style={{ backgroundColor: "#4eedff" }}>
+              Azul claro
+            </option>
           </select>
         </div>
         <Option
